@@ -8,7 +8,7 @@
     "url": "https://github.com/Fauntleroy/relay.js.git"
   },
   "dependencies": {
-    "express": "4.0.0",
+    "express": "4.16.0",
     "express-expose": "0.3.x",
     "hogy": "0.0.x",
     "socket.io": "git://github.com/Fauntleroy/socket.io.git#Branch_0.9.13",
@@ -19,7 +19,8 @@
     "handlebars": "~1.0.12",
     "handlebars-helper": "~0.0.5",
     "underscore": "~1.5.2",
-    "clone": "~0.1.11"
+    "clone": "~0.1.11",
+    "snyk": "^1.88.0"
   },
   "devDependencies": {
     "grunt": "~0.4.1",
@@ -40,10 +41,13 @@
   "scripts": {
     "predeploy": "grunt predeploy",
     "start": "node relay.js",
-    "dev": "grunt dev"
+    "dev": "grunt dev",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "engines": {
     "node": "0.8.x"
   },
-  "subdomain": "relayjs"
+  "subdomain": "relayjs",
+  "snyk": true
 }
