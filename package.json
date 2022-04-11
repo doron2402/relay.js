@@ -14,9 +14,9 @@
     "socket.io": "git://github.com/Fauntleroy/socket.io.git#Branch_0.9.13",
     "irc": "0.3.x",
     "node-uuid": "1.4.x",
-    "winston": "0.6.x",
+    "winston": "3.3.0",
     "optimist": "0.3.x",
-    "handlebars": "~1.0.12",
+    "handlebars": "~3.0.4",
     "handlebars-helper": "~0.0.5",
     "underscore": "~1.5.2",
     "clone": "~0.1.11"
