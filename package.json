@@ -19,7 +19,8 @@
     "handlebars": "~1.0.12",
     "handlebars-helper": "~0.0.5",
     "underscore": "~1.5.2",
-    "clone": "~0.1.11"
+    "clone": "~0.1.11",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "grunt": "~0.4.1",
@@ -40,10 +41,13 @@
   "scripts": {
     "predeploy": "grunt predeploy",
     "start": "node relay.js",
-    "dev": "grunt dev"
+    "dev": "grunt dev",
+    "prepublish": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "engines": {
     "node": "0.8.x"
   },
-  "subdomain": "relayjs"
+  "subdomain": "relayjs",
+  "snyk": true
 }
